@@ -115,7 +115,7 @@ function getArgs(options) {
 
     if (!isNaN(psm)) {
         assert(psm >= 0 && psm <= 13, 'page segmentation mode must be between 0 and 13')
-        args.push('--psm', psm)
+        args.push('-psm', psm)
     }
 
     const oem = +options.oem
